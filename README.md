@@ -1,2 +1,3 @@
 ссылка на git-репозиторий - https://github.com/ilshat-davletshin/slozhno-sosredotochitsya.git
+
 ссылка на макет - [https://www.figma.com/file/twlp47Nl0Zss7W1AMcyR7m/%236-%D0%A1%D0%BB%D0%BE%D0%B6%D0%BD%D0%BE-%D1%81%D0%BE%D1%81%D1%80%D0%B5%D0%B4%D0%BE%D1%82%D0%BE%D1%87%D0%B8%D1%82%D1%8C%D1%81%D1%8F-(Copy)?type=design&node-id=601-573&mode=design&t=0RyacGZFErxVPyUU-0](https://www.figma.com/file/twlp47Nl0Zss7W1AMcyR7m/%236-%D0%A1%D0%BB%D0%BE%D0%B6%D0%BD%D0%BE-%D1%81%D0%BE%D1%81%D1%80%D0%B5%D0%B4%D0%BE%D1%82%D0%BE%D1%87%D0%B8%D1%82%D1%8C%D1%81%D1%8F-(Copy)?type=design&node-id=601-573&mode=design&t=0RyacGZFErxVPyUU-0)
