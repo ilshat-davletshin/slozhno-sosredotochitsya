@@ -160,11 +160,14 @@
 .content__blocks {
   gap: var(--primary-gap);
 }
-.text-block__title {
-  margin-block-end: calc(var(--primary-gap) / 2);
+.text-block__title,
+.content__blocks-title {
   color: var(--bg-color);
   font-size: 1.125rem;
   font-weight: bold;
+}
+.text-block__title {
+  margin-block-end: calc(var(--primary-gap) / 2);
 }
 .title-decor {
   background-color: var(--accent-color);
@@ -203,9 +206,6 @@
 .simple-tips .content__blocks {
   display: flex;
   flex-direction: column;
-}
-.simple-tips .text-block__title {
-  margin-block-end: var(--primary-gap);
 }
 .text-block__subtitle {
   color: var(--bg-color);
