@@ -1,69 +1,68 @@
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  block-size: max(100vh, 41.75rem);
-  inline-size: 100%;
-  font-family: var(--primary-font), monospace;
-  font-size: 18px;
-  font-weight: normal;
-  line-height: 1.3;
   color: var(--primary-color);
-  background-image: url(../images/cover-image-dark.png);
+  font-family: var(--primary-font), monospace;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.3;
   background-color: var(--bg-color);
+  background-image: url(../images/cover-image-dark.png);
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
   background-attachment: fixed;
+  block-size: max(100vh, 41.75rem);
+  inline-size: 100%;
 }
 .header {
   position: relative;
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
-  block-size: inherit;
   padding-block: var(--primary-gap);
+  block-size: inherit;
 }
 .decorated-zone {
   position: relative;
 }
 .decorated-zone::before,
 .decorated-zone::after {
-  position: absolute;
   content: "";
+  position: absolute;
   display: block;
   inline-size: 1.5625rem;
   block-size: 1.5625rem;
 }
 .decorated-zone::before {
+  border-inline-end: 0.0625rem solid var(--accent-color);
+  border-block-start: 0.0625rem solid var(--accent-color);
   inset-block-start: 1.25rem;
   inset-inline-end: 1.25rem;
-  border-block-start: 0.0625rem solid var(--accent-color);
-  border-inline-end: 0.0625rem solid var(--accent-color);
 }
 .decorated-zone::after {
-  inset-block-end: 1.25rem;
-  inset-inline-start: 1.25rem;
   border-inline-start: 0.0625rem solid var(--accent-color);
   border-block-end: 0.0625rem solid var(--accent-color);
+  inset-block-end: 1.25rem;
+  inset-inline-start: 1.25rem;
 }
 .header__rec {
   position: absolute;
-  inset-inline-end: 1.875rem;
-  inset-block-start: 1.25rem;
   display: flex;
   align-items: center;
   color: var(--accent-color);
   line-height: 1.39;
   text-transform: uppercase;
+  inset-inline-end: 1.875rem;
+  inset-block-start: 1.25rem;
 }
 .header__rec::after {
   content: "";
   display: inline-block;
+  margin-inline-start: calc(var(--primary-gap) / 2);
+  border-radius: 50%;
+  border-block-end: 0.0625rem solid var(--accent-color);
+  box-shadow: 0px 0px 0.25rem 0.125rem var(--accent-color);
+  background-color: var(--accent-color);
   block-size: 0.5625rem;
   inline-size: 0.5625rem;
-  margin-inline-start: calc(var(--primary-gap) / 2);
-  background-color: var(--accent-color);
-  border-radius: 50%;
-  box-shadow: 0px 0px 0.25rem 0.125rem var(--accent-color);
-  border-block-end: 0.0625rem solid var(--accent-color);
 }
 .header__theme-menu-list {
   display: flex;
@@ -75,15 +74,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  block-size: 1.625rem;
+  border: 0;
   padding-inline: 0.8125rem;
   padding-block: 0 0.125rem;
-  color: var(--accent-color);
-  background-color: transparent;
-  text-transform: lowercase;
-  border: 0;
   outline-color: inherit;
+  color: var(--accent-color);
+  text-transform: lowercase;
+  background-color: transparent;
   cursor: pointer;
+  block-size: 1.625rem;
 }
 .header__theme-menu-button:hover {
   outline: 0.0625rem solid rgba(var(--accent-color-rgb), 0.4);
@@ -96,25 +95,25 @@
   outline: 0.0625rem solid var(--accent-color);
 }
 .header__theme-menu-button:focus-visible::after {
-  position: absolute;
   content: "";
+  position: absolute;
+  outline: none;
+  background-color: var(--accent-color);
   inset-block-end: 0;
   inset-inline-start: 0;
   block-size: 0.0625rem;
   inline-size: 100%;
-  background-color: var(--accent-color);
-  outline: none;
 }
 .header__theme-menu-button_active {
   pointer-events: none;
 }
 .logo {
   color: var(--secondary-color);
-  font-size: var(--font-size-desktop);
   font-weight: bold;
+  font-size: var(--font-size-desktop);
   line-height: 0.825;
-  text-shadow: 0.25rem 0.25rem 0 var(--text-shadow-color);
   text-transform: lowercase;
+  text-shadow: 0.25rem 0.25rem 0 var(--text-shadow-color);
 }
 .header__text {
   display: flex;
@@ -122,12 +121,12 @@
   padding-inline: var(--primary-gap);
 }
 .header__paragraph {
-  inline-size: 50%;
-  margin-block: auto;
   margin-inline-start: auto;
+  margin-block: auto;
   color: var(--bg-color);
   font-weight: bold;
   background-color: var(--accent-color);
+  inline-size: 50%;
 }
 .content {
   margin-block: calc(3 * var(--primary-gap));
@@ -153,8 +152,8 @@
 }
 .content__section-title {
   color: var(--accent-color);
-  font-size: 1.125rem;
   font-weight: bold;
+  font-size: 1.125rem;
   line-height: 1.3;
 }
 .content__blocks {
@@ -163,8 +162,8 @@
 .text-block__title,
 .content__blocks-title {
   color: var(--bg-color);
-  font-size: 1.125rem;
   font-weight: bold;
+  font-size: 1.125rem;
 }
 .text-block__title {
   margin-block-end: calc(var(--primary-gap) / 2);
@@ -180,8 +179,8 @@
   margin-block-end: var(--primary-gap);
 }
 .content__link {
-  text-shadow: 0.25rem 0.25rem 0 var(--text-shadow-color);
   text-decoration: none;
+  text-shadow: 0.25rem 0.25rem 0 var(--text-shadow-color);
   cursor: pointer;
 }
 .content__link:hover {
@@ -223,12 +222,12 @@
 .gallery__title {
   grid-column: 1/-1;
   color: var(--bg-color);
-  font-size: 1.125rem;
   font-weight: bold;
+  font-size: 1.125rem;
 }
 .content__img {
-  height: 100%;
   width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 .content__img:nth-of-type(1) {
@@ -251,15 +250,15 @@
 .footer {
   position: relative;
   display: flex;
-  align-items: center;
   justify-content: center;
-  block-size: inherit;
+  align-items: center;
   padding-block: var(--primary-gap);
+  block-size: inherit;
 }
 @media (width < 64rem) {
   .header__theme-menu {
-    margin-block: auto;
     margin-inline-start: auto;
+    margin-block: auto;
     padding-inline: var(--primary-gap);
   }
   .header__theme-menu-list {
@@ -299,8 +298,8 @@
     gap: var(--primary-gap);
   }
   .logo {
-    font-size: var(--font-size-mobile);
     padding-inline: var(--primary-gap);
+    font-size: var(--font-size-mobile);
   }
   .header__paragraph {
     inline-size: 100%;
