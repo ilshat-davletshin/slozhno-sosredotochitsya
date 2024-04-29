@@ -10,7 +10,7 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  block-size: max(100svh, 41.75rem);
+  block-size: max(100dvh, 41.75rem);
   inline-size: 100%;
 }
 .header {
